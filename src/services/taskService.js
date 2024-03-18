@@ -34,7 +34,7 @@ const updateTask = async (taskId, userId, updatedData) => {
       { _id: taskId, userId: userId },
       { $set: updatedData },
       { new: true }
-    );
+    );  
 
     return task;
   } catch (error) {

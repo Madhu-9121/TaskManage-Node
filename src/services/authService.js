@@ -29,7 +29,7 @@ const loginUser = async (userData) => {
     const { email, password } = userData;
 
     const user = await User.findOne({ email });
-
+    
     if (!user) {
       throw new Error("User is not found");
     }
